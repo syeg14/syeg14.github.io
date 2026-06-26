@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Condado Local Guide 🇵🇷</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a18; max-width: 680px; margin: 0 auto; }
+  .hero { padding: 2.5rem 1.25rem 1.5rem; text-align: center; background: #f0eeea; border-bottom: 0.5px solid #dddbd3; }
+  .hero h1 { font-size: 26px; font-weight: 500; margin-bottom: 6px; }
+  .hero p { font-size: 14px; color: #6b6b67; }
+  .flag { font-size: 24px; margin-bottom: 8px; }
+  .section { padding: 1.25rem 1rem 0; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #9b9b96; margin-bottom: 10px; padding-left: 2px; }
+  .card { background: #fff; border: 0.5px solid #dddbd3; border-radius: 12px; padding: .85rem 1rem; margin-bottom: 9px; display: flex; align-items: flex-start; gap: 12px; cursor: pointer; transition: border-color .15s; text-decoration: none; color: inherit; }
+  .card:hover { border-color: #b5b3ac; }
+  .card.static { cursor: default; }
+  .icon-wrap { width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
+  .ic-food { background: #E1F5EE; }
+  .ic-beach { background: #E6F1FB; }
+  .ic-cannabis { background: #EAF3DE; }
+  .ic-liquor { background: #FAEEDA; }
+  .card-body { flex: 1; min-width: 0; }
+  .card-name { font-size: 14px; font-weight: 500; margin-bottom: 2px; }
+  .card-meta { font-size: 12px; color: #6b6b67; line-height: 1.5; }
+  .card-addr { font-size: 11px; color: #9b9b96; margin-top: 3px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 500; padding: 2px 7px; border-radius: 99px; margin-top: 4px; }
+  .bg { background: #EAF3DE; color: #3B6D11; }
+  .bb { background: #E6F1FB; color: #185FA5; }
+  .ba { background: #FAEEDA; color: #854F0B; }
+  .bp { background: #EEEDFE; color: #534AB7; }
+  .bc { background: #FAECE7; color: #993C1D; }
+  .arrow { color: #9b9b96; font-size: 14px; align-self: center; flex-shrink: 0; }
+  .divider { height: 0.5px; background: #dddbd3; margin: 1.25rem 1rem 0; }
+  .rule-row { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px; }
+  .rule-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .rule-text { font-size: 12px; color: #6b6b67; line-height: 1.5; }
+  .rule-text strong { color: #1a1a18; font-weight: 500; }
+  .info-card { background: #fff; border: 0.5px solid #dddbd3; border-radius: 12px; padding: 1rem; margin-bottom: 9px; }
+  .donate-wrap { padding: 1.25rem 1rem; text-align: center; }
+  .donate-inner { background: #fff; border: 0.5px solid #dddbd3; border-radius: 12px; padding: 1.25rem 1rem; }
+  .donate-inner p { font-size: 13px; color: #6b6b67; margin-bottom: 12px; }
+  .paypal-btn { display: inline-flex; align-items: center; gap: 8px; background: #0070BA; color: #fff; font-size: 14px; font-weight: 500; padding: 10px 22px; border-radius: 8px; text-decoration: none; transition: background .15s; }
+  .paypal-btn:hover { background: #005ea6; }
+  .paypal-logo { width: 18px; height: 18px; }
+  .footer { padding: 1rem 1rem 2rem; text-align: center; font-size: 12px; color: #9b9b96; }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a18; color: #e8e6e0; }
+    .hero { background: #222220; border-bottom-color: #3a3a36; }
+    .hero p { color: #9b9b96; }
+    .card { background: #2a2a28; border-color: #3a3a36; color: #e8e6e0; }
+    .card:hover { border-color: #5a5a56; }
+    .info-card { background: #2a2a28; border-color: #3a3a36; }
+    .divider { background: #3a3a36; }
+    .donate-inner { background: #2a2a28; border-color: #3a3a36; }
+    .section-label { color: #6b6b67; }
+    .card-meta { color: #9b9b96; }
+    .card-addr { color: #6b6b67; }
+    .rule-text { color: #9b9b96; }
+    .rule-text strong { color: #e8e6e0; }
+    .donate-inner p { color: #9b9b96; }
+    .footer { color: #6b6b67; }
+    .arrow { color: #6b6b67; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="flag">🇵🇷</div>
+  <h1>Condado Local Guide</h1>
+  <p>Eat, beach, drink, and stay legal — the real spots</p>
+</div>
+
+<!-- FOOD -->
+<div class="section">
+  <div class="section-label">🍽️ Where to eat</div>
+
+  <a class="card" href="https://maps.google.com/?q=Ropa+Vieja+Grill+Condado+San+Juan+PR">
+    <div class="icon-wrap ic-food">🥘</div>
+    <div class="card-body">
+      <div class="card-name">Ropa Vieja Grill</div>
+      <div class="card-meta">Puerto Rican & Cuban fusion · mofongo con ropa vieja, pork chops · indoor & outdoor seating</div>
+      <div class="card-addr">Condado Ave, Condado</div>
+      <span class="badge bg">Local fave</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=Cocina+Abierta+Condado+San+Juan+PR">
+    <div class="icon-wrap ic-food">👨‍🍳</div>
+    <div class="card-body">
+      <div class="card-name">Cocina Abierta</div>
+      <div class="card-meta">Open-kitchen tasting menus · 4–6 courses, seasonal · carnivore, vegetarian & pescatarian</div>
+      <div class="card-addr">Condado · Reservations recommended</div>
+      <span class="badge bc">Upscale</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=Mario+Pagan+Restaurant+Condado+San+Juan+PR">
+    <div class="icon-wrap ic-food">⭐</div>
+    <div class="card-body">
+      <div class="card-name">Mario Pagán Restaurant</div>
+      <div class="card-meta">Modern Puerto Rican gastronomy · local ingredients, international technique · top-rated in PR</div>
+      <div class="card-addr">Condado · Fine dining</div>
+      <span class="badge bp">Top rated</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=Kasalta+Bakery+Ocean+Park+San+Juan+PR">
+    <div class="icon-wrap ic-food">🥐</div>
+    <div class="card-body">
+      <div class="card-name">Kasalta Bakery</div>
+      <div class="card-meta">Legendary PR bakery · mallorcas, medianoches, café con leche · opens early</div>
+      <div class="card-addr">1966 McLeary Ave, Ocean Park</div>
+      <span class="badge bg">Breakfast & lunch</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+</div>
+
+<div class="divider"></div>
+
+<!-- BEACHES -->
+<div class="section">
+  <div class="section-label">🏖️ Beaches</div>
+
+  <a class="card" href="https://maps.google.com/?q=Condado+Beach+San+Juan+PR">
+    <div class="icon-wrap ic-beach">🌊</div>
+    <div class="card-body">
+      <div class="card-name">Condado Beach</div>
+      <div class="card-meta">Steps from Ashford Ave · calm water · great for a quick dip · cans & plastic only, no glass</div>
+      <div class="card-addr">Ashford Ave, Condado</div>
+      <span class="badge bb">Walkable</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=Ocean+Park+Beach+San+Juan+PR">
+    <div class="icon-wrap ic-beach">🏄</div>
+    <div class="card-body">
+      <div class="card-name">Ocean Park Beach</div>
+      <div class="card-meta">Quieter, local crowd · wider shore · windsurfing & kite surfing · 5 min east</div>
+      <div class="card-addr">Ocean Park neighborhood</div>
+      <span class="badge bb">Chill vibes</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=Isla+Verde+Beach+Carolina+PR">
+    <div class="icon-wrap ic-beach">🌴</div>
+    <div class="card-body">
+      <div class="card-name">Isla Verde Beach</div>
+      <div class="card-meta">Wider stretch · beach bars, vendors & hotel pools nearby · most action</div>
+      <div class="card-addr">Isla Verde, Carolina · ~10 min east</div>
+      <span class="badge bb">Lively</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+</div>
+
+<div class="divider"></div>
+
+<!-- CANNABIS -->
+<div class="section">
+  <div class="section-label">🌿 Medicinal cannabis card</div>
+
+  <a class="card" href="https://maps.google.com/?q=Live+It+House+Calle+Loiza+San+Juan+PR" style="border-color: #5c9e6e;">
+    <div class="icon-wrap ic-cannabis">🏠</div>
+    <div class="card-body">
+      <div class="card-name">Live It House — Free card with them</div>
+      <div class="card-meta">Get your medical card <strong style="color:#3B6D11">free</strong> when you register through Live It House · card valid only at their dispensary · premium flower, concentrates, edibles & vapes</div>
+      <div class="card-addr">Calle Loíza, San Juan (Condado/Santurce border)</div>
+      <span class="badge bg">Free card here</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://leafwell.com/medical-card/puerto-rico">
+    <div class="icon-wrap ic-cannabis">💻</div>
+    <div class="card-body">
+      <div class="card-name">Leafwell — card usable anywhere</div>
+      <div class="card-meta">Fast online approval · 30-day tourist card · $99 consult · ~30 min · valid at all dispensaries</div>
+      <div class="card-addr">leafwell.com · US citizens & residents 21+ only</div>
+      <span class="badge bg">All dispensaries</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <div class="card static">
+    <div class="icon-wrap ic-cannabis">ℹ️</div>
+    <div class="card-body">
+      <div class="card-name">Good to know</div>
+      <div class="card-meta">Recreational is illegal · public consumption & beaches are off-limits · private spaces only · no smoking, vaping/edibles allowed</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- LIQUOR -->
+<div class="section">
+  <div class="section-label">🥃 Liquor stores</div>
+
+  <a class="card" href="https://maps.google.com/?q=The+House+Wine+Beer+More+Condado+San+Juan+PR">
+    <div class="icon-wrap ic-liquor">🍷</div>
+    <div class="card-body">
+      <div class="card-name">The House — Wine, Beer & More</div>
+      <div class="card-meta">6,200 sq ft · huge rum, wine & craft beer selection · above SuperMax · best prices on Ashford</div>
+      <div class="card-addr">114 Av. José de Diego, Condado</div>
+      <span class="badge ba">Best selection</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=H%26R+Food+Liquor+Market+Condado+San+Juan+PR">
+    <div class="icon-wrap ic-liquor">🏪</div>
+    <div class="card-body">
+      <div class="card-name">H&amp;R Food &amp; Liquor Market</div>
+      <div class="card-meta">Full minimarket + liquor · walkable from Condado strip · cold beer & spirits</div>
+      <div class="card-addr">Bristol Building, next to Cartier, Condado</div>
+      <span class="badge ba">Walk-in friendly</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=Bodegas+Compostela+Calle+Condado+San+Juan+PR">
+    <div class="icon-wrap ic-liquor">🍾</div>
+    <div class="card-body">
+      <div class="card-name">Bodegas Compostela</div>
+      <div class="card-meta">Wine-forward · tapas, sushi & pizza on-site · buy a bottle and drink it there</div>
+      <div class="card-addr">106 Calle Condado, Condado</div>
+      <span class="badge ba">Wine & tapas</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+
+  <a class="card" href="https://maps.google.com/?q=Casa+Melaza+Rum+Boutique+Old+San+Juan+PR">
+    <div class="icon-wrap ic-liquor">🍹</div>
+    <div class="card-body">
+      <div class="card-name">Casa Melaza Rum Boutique</div>
+      <div class="card-meta">Rum flights & tastings · local craft rums you won't find elsewhere · knowledgeable owners</div>
+      <div class="card-addr">74 Caleta de San Juan, Old San Juan</div>
+      <span class="badge ba">Rum lovers</span>
+    </div>
+    <div class="arrow">›</div>
+  </a>
+</div>
+
+<div class="divider"></div>
+
+<!-- DRINKING RULES -->
+<div class="section">
+  <div class="section-label">🍺 Drinking on the streets</div>
+  <div class="info-card">
+    <div class="rule-row">
+      <div class="rule-icon">🚫</div>
+      <div class="rule-text"><strong>No glass bottles in public.</strong> On the beach or streets, keep it in a can or plastic cup — glass is prohibited and police can fine you on the spot.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🏖️</div>
+      <div class="rule-text"><strong>Beach drinking is generally tolerated</strong> in cans or plastic. Condado, Ocean Park, and Isla Verde are relaxed about it — just no glass and clean up after yourself.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🚶</div>
+      <div class="rule-text"><strong>Street drinking depends on the municipality.</strong> Each town sets its own rules. Some areas like La Placita (Santurce) are zoned for it; most sidewalks technically aren't. Police discretion varies.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🔞</div>
+      <div class="rule-text"><strong>Drinking age is 18</strong> — not 21 like the mainland. ID is often checked at bars and restaurants.</div>
+    </div>
+    <div class="rule-row" style="margin-bottom:0">
+      <div class="rule-icon">🚗</div>
+      <div class="rule-text"><strong>Zero tolerance in cars.</strong> Open containers in the passenger area are illegal — $100+ fine. Keep bottles in the trunk.</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- DRIVING RULES -->
+<div class="section">
+  <div class="section-label">🚗 Driving — what's different from the US</div>
+  <div class="info-card">
+    <div class="rule-row">
+      <div class="rule-icon">🚦</div>
+      <div class="rule-text"><strong>Right turn on red is allowed</strong> unless a sign says otherwise.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🚔</div>
+      <div class="rule-text"><strong>Police lights on = not always pulling you over.</strong> PR police drive with lights on all the time. Only pull over if there's also a siren.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🌙</div>
+      <div class="rule-text"><strong>After midnight, you can roll through red lights</strong> with caution if the intersection is clear — locals do it to avoid sitting alone at dark intersections.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🛣️</div>
+      <div class="rule-text"><strong>Speed limits in MPH, distances in kilometers.</strong> Urban: 25 mph · Rural: 45 mph · Highway: 65 mph. Gas prices are per liter.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🔄</div>
+      <div class="rule-text"><strong>Left lane = fast lane on highways.</strong> Slower traffic stays right.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">💳</div>
+      <div class="rule-text"><strong>Highways have tolls.</strong> Get an AutoExpreso pass from your rental company or pay cash at select lanes.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-icon">🍺</div>
+      <div class="rule-text"><strong>DUI limit is 0.08% BAC</strong> — same as the US mainland. Checkpoints common on weekends. First offense: $500 fine + 6-month license suspension.</div>
+    </div>
+    <div class="rule-row" style="margin-bottom:0">
+      <div class="rule-icon">📵</div>
+      <div class="rule-text"><strong>No phone while driving</strong> unless hands-free. Speed cameras active island-wide.</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- DONATE -->
+<div class="donate-wrap">
+  <div class="donate-inner">
+    <p>Found this guide helpful? Buy the locals a round ☕🍺</p>
+    <a class="paypal-btn" href="https://www.paypal.com/donate/?business=5EYQUT69H2GML&no_recurring=0&currency_code=USD">
+      <svg class="paypal-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/></svg>
+      Donate via PayPal
+    </a>
+  </div>
+</div>
+
+<div class="footer">Made with ❤️ in Puerto Rico · Condado, San Juan</div>
+
+</body>
+</html>
